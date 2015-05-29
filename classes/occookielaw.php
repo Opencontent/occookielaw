@@ -34,7 +34,7 @@ class OCCookieLaw
 
     public static function injectAlert( $templateResult )
     {
-        $data = self::run();
+        $data = self::run() . '</body>';
         $templateResult = str_replace( '</body>', $data, $templateResult );
         return $templateResult;
     }

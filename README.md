@@ -4,6 +4,13 @@ L'estensione inietta automaticamente nel pagelayout il template `occookielaw/des
 
 Non serve inserire template a mano, il filtro di output sostituisce il testo `</body>` con il contenuto del template.
 
+Il contenuto della pagina 'Maggiori informazioni' è statico in `occookielaw/design/standard/templates/cookie.tpl` e viene genrato dal modulo "cookie" considerando le variabili:
+
+* string $site_url = site.ini[SiteSettings]SiteName ( site.ini[SiteSettings]SiteUrl )
+* string $info_mail = site.ini[SiteSettings]PrivacyEmail se non c'è notification.ini[SiteSettings]EmailSender se non c'è site.ini[SiteSettings]AdminEmail
+
+
+
 ## Attivazione
 
 * in `<document_root_mio_sito>/extension` eseguire:
@@ -26,7 +33,7 @@ DismissButtonText=
 InfoButtonText
 ```
 
-* eseguire l'override (statico, cioè senza regola in override.ini) del file occookielaw/design/standard/templates/cookie.tpl nella propria estensione
+* eseguire l'override (statico, cioè senza regola in override.ini) del file `occookielaw/design/standard/templates/cookie.tpl` nella propria estensione
 
 
 ## TODO

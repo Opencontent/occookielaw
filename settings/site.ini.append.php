@@ -7,7 +7,7 @@ PolicyOmitList[]=cookie
 TranslationExtensions[]=occookielaw
 
 [Event]
-Listeners[]=response/preoutput@OCCookieLaw::injectAlert
+Listeners[]=response/output@OCCookieLaw::injectAlert
 
 [OutputSettings]
 OutputFilterName=OCCookieLaw

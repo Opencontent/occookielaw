@@ -1,6 +1,7 @@
 # OpenContent CookieLaw
 
-L'estensione inietta nel pagelayout il template `occookielaw/design/standard/templates/inject_in_page_layout.tpl` (ricavato da https://www.cookiechoices.org/)
+L'estensione inietta automaticamente nel pagelayout il template `occookielaw/design/standard/templates/inject_in_page_layout.tpl` (ricavato da https://www.cookiechoices.org/)
+Non serve inserire template a mano, il filtro di output sostituisce il testo `</body>` con il contentuto del template.
 
 ## Attivazione
 

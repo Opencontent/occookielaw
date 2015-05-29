@@ -41,6 +41,8 @@ class OCCookieLaw
 
     public static function filter( $templateResult )
     {
+        if ( class_exists( 'ezpEvent' ) )
+            return $templateResult;
         return self::injectAlert( $templateResult );
     }
 

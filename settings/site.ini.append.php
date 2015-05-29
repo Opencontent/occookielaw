@@ -9,4 +9,7 @@ TranslationExtensions[]=occookielaw
 [Event]
 Listeners[]=response/preoutput@OCCookieLaw::injectAlert
 
+[OutputSettings]
+OutputFilterName=OCCookieLaw
+
 */ ?>

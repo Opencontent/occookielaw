@@ -39,5 +39,10 @@ class OCCookieLaw
         return $templateResult;
     }
 
+    public static function filter( $templateResult )
+    {
+        return self::injectAlert( $templateResult );
+    }
+
 
 }

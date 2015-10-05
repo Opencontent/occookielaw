@@ -15,7 +15,7 @@ Il contenuto della pagina 'Maggiori informazioni' è statico in `occookielaw/des
 
 * in `<document_root_mio_sito>/extension` eseguire:
 ```
-git clone ssh://developer@devapache.opencontent.it:222/home/git/occookielaw
+git clone https://github.com/Opencontent/occookielaw.git
 ```
 
 * attivare estensione da backend (o da site.ini rigenerando poi gli autoload)

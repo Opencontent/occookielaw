@@ -36,5 +36,24 @@ InfoButtonText
 * eseguire l'override (statico, cioè senza regola in override.ini) del file `occookielaw/design/standard/templates/cookie.tpl` nella propria estensione
 
 
+## Esclusioni
+
+In cookielaw.ini è inoltre possibile configurare esclusioni in base all'url corrente o all'utente corrente:
+
+ * Non inietta il template se l'utente corrente è loggato
+
+```
+[UriExcludeList]
+ExcludeUserLoggedIn=enabled
+```
+
+ * Non inietta il template se l'url corrente è compreso nella lista (sono permessi i wildcard)
+
+```
+[UriExcludeList]
+Exclude[]=user/register
+Exclude[]=content/edit/*
+```
+
 ## TODO
 * traduzioni dei testi di default in occookielaw/classes/occookielaw.php

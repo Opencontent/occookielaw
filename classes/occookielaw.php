@@ -32,10 +32,17 @@ class OCCookieLaw
                 $info = $ini->variable( 'AlertSettings', 'InfoButtonText' );
             }
 
+            $position = "top";
+            if ( $ini->hasVariable( 'AlertSettings', 'Position' ) )
+            {
+                $position = $ini->variable( 'AlertSettings', 'Position' );
+            }
+
             $tpl = eZTemplate::factory();
             $tpl->setVariable( 'message', $message );
             $tpl->setVariable( 'dismiss_button', $dismiss );
             $tpl->setVariable( 'info_button', $info );
+            $tpl->setVariable( 'position', $position );
 
             return $tpl->fetch( 'design:inject_in_page_layout.tpl' );
         }

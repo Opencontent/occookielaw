@@ -33,8 +33,9 @@ DismissButtonText=
 InfoButtonText
 ```
 
-* eseguire l'override (statico, cioè senza regola in override.ini) del file `occookielaw/design/standard/templates/cookie.tpl` nella propria estensione
+* l'estensione mostra il contenuto dell'attributo `description` dell'oggetto con remote_id `informativa_cookie`; se non esiste carica il testo di default presente nel template `occookielaw/design/standard/templates/cookie.tpl`
 
+* per personalizzare il testo del template eseguire l'override (statico, cioè senza regola in override.ini) del file `occookielaw/design/standard/templates/cookie.tpl` nella propria estensione
 
 ## Esclusioni
 
